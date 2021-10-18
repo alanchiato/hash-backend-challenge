@@ -36,7 +36,7 @@ npm run test
 Caso a execução dos testes seja realizada fora do container, deve-se instalar todas as dependências previamente com o comando
 
 ```bash
-npm run start
+npm i
 ```
 
 ## Request
