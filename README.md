@@ -27,10 +27,16 @@ docker compose up
 
 ## Testes
 
-Para execução de testes e verificação de cobertura alcançada, execute o script
+Para execução de testes e verificação de cobertura alcançada, execute o script.
 
 ```bash
 npm run test
+```
+
+Caso a execução dos testes seja realizada fora do container, deve-se instalar todas as dependências previamente com o comando
+
+```bash
+npm run start
 ```
 
 ## Request
