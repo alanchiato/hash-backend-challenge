@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  discount:
+    image: hashorg/hash-mock-discount-service
+    ports:
+      - "${GRCP_PORT}:${GRCP_PORT}"
+  app:
+    build: .
+    environment:
+      PORT: "${PORT}"
+      BF_DAY: "${BF_DAY}"
+      GRCP_PACK_SERVICE: "${GRCP_PACK_SERVICE}"
+      GRCP_SERVICE: "${GRCP_SERVICE}"
+      GRCP_HOST: "${GRCP_HOST}"
+      GRCP_PORT: "${GRCP_PORT}"
+    command: npm start
+    ports:
+      - "${PORT}:${PORT}"

@@ -1,0 +1,30 @@
+{
+  "name": "hash-backend-challenge",
+  "version": "1.0.0",
+  "description": "Desafio tecnico Hash",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-pino-logger": "^6.0.0",
+    "express-validator": "^6.12.2",
+    "lodash": "^4.17.21",
+    "node-grpc-client": "^1.5.0",
+    "pino": "^6.13.3",
+    "pino-pretty": "^7.0.1",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "jest": "^27.3.0",
+    "jest-html-reporter": "^3.4.1",
+    "jest-junit": "^13.0.0",
+    "supertest": "^6.1.6"
+  }
+}
