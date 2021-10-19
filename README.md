@@ -25,6 +25,8 @@ Use o docker e o docker-compose para a correta inicialização do hash-backend-c
 docker compose up
 ```
 
+O Serviço é exposto na porta 8082.
+
 ## Testes
 
 Para execução de testes e verificação de cobertura alcançada, execute o script.
@@ -33,7 +35,7 @@ Para execução de testes e verificação de cobertura alcançada, execute o scr
 npm run test
 ```
 
-Caso a execução dos testes seja realizada fora do container, deve-se instalar todas as dependências previamente com o comando
+Caso a execução dos testes seja realizada fora do container, deve-se instalar todas as dependências previamente, habilitar a leitura do arquivo .env no arquivo server.js, e executar o comando de instalação
 
 ```bash
 npm i

@@ -1,4 +1,4 @@
-require('dotenv/config');
+// require('dotenv/config');
 const logger = require('./src/logger');
 const app = require('./app');
 const port = process.env.PORT || 8082;
